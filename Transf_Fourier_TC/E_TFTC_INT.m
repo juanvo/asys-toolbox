@@ -1,4 +1,4 @@
-% E_TFTC_INTERVAL -- Calcula los índices del vector 'Fw' para los cuales
+% E_TFTC_INT -- Calcula los índices del vector 'Fw' para los cuales
 %     se verifica que energéticamente se obtiene el intervalo más
 %     cercano a un porcenje determinado.
 %
@@ -10,7 +10,7 @@
 %
 % * Uso: *
 %  
-% [interval_percent, interval_idx] = E_TFTC_INTERVAL( Fw, dw, energy_t, percent )
+% [interval_percent, interval_idx] = E_TFTC_INT( Fw, dw, energy_t, percent )
 %
 % * Argumentos *
 %
@@ -39,7 +39,7 @@
 %    energy_t = sum( abs(ft).^2 ) * dt;
 %    dw = 0.01; WMAX = 2*pi*10;
 %    [Fw, w]= TFTC(t, ft, WMAX, dw);
-%    [percent, idx] = E_TFTC_INTERVAL(Fw, dw, energy_t, 95);
+%    [percent, idx] = E_TFTC_INT(Fw, dw, energy_t, 95);
 %    interv_freq = w(idx(1):idx(2))/(2*pi);
 %    interv_Fw = Fw(idx(1):idx(2));
 %    
